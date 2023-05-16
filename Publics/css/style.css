@@ -1,0 +1,596 @@
+@font-face {
+    font-family: "Panthera";
+    src: url(../police/Panthera_Regular.ttf) format("TrueType");
+}
+
+@font-face {
+    font-family: "Beyno";
+    src: url(../css/font/BEYNO.ttf) format("TrueType");
+}
+
+@font-face {
+    font-family: "Wakanda forever";
+    src: url(../css/font/Wakanda_Forever_Regular.ttf) format("TrueType");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url(../css/font/Cantarell_Regular.ttf) format("TrueType");
+}
+
+:root {
+    --color_violet: #DF99F2;
+    --color_white: #ffffff;
+    --color_gray: #9E91B7;
+    --rose_color: #F2CEF2;
+    --clear_color_bleu: #3D2DA6;
+    --color_bleu: #07338C;
+    --deep-color_bleu: #021740be;
+    --deep-color_bleu_2: #02174065;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color_white);
+    font-family: "Cantarell", sans-serif;
+    font-size: 1rem;
+    background-image: url(../img/All_pages/arrière_plan.png);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+                        /*-------------------- Header------------------------------------ */
+nav {
+    padding: 3rem 2rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    height: 1rem;
+}
+
+.logo img {
+    height: 1.5rem;
+}
+
+.logo .cross {
+    height: 33%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.lien_nav {
+    font-family: "Beyno";
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.link-active {
+    color: var(--color_violet);
+    text-decoration: underline;
+}
+
+.lien_nav a:hover {
+    text-decoration: underline;
+}
+
+.image:hover {
+    filter: brightness(0) 
+     saturate(100%) 
+     invert(75%) 
+     sepia(61%) 
+     saturate(1896%) 
+     hue-rotate(212deg) 
+     brightness(100%) 
+     contrast(90%);
+}
+
+
+/* Main */
+.h2 {
+    font-family: 'Beyno';
+    color: var(--color_gray);
+    font-size: 1.5rem;
+}
+
+.Black {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.Black-text {
+    width: 30%;
+    display: flex;
+    gap: 100%;
+    flex-direction: column;
+}
+
+.Black-text *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.Black-text a {
+    text-decoration: underline;
+}
+
+.Black-text h1 {
+    font-family: 'Panthera';
+    color: var(--color_gray);
+    font-size: 2.8rem;
+}
+
+.Black-img {
+    width: 70%;
+}
+
+.Black-img img {
+    width: 100%;
+}
+
+                    /*------------------------------- Desing section Acteurs--------------------------------- */
+#Acteur {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+.acte {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--deep-color_bleu);
+    padding-left: 2%;
+    width: 43.5%;
+}
+
+.acteurs {
+    width: 12%;
+    padding-left: 1%;
+    background-color: var(--deep-color_bleu);
+}
+
+.acte-text {
+    padding-top: 5%;
+    padding-left: 2%;
+    width: 60%;
+}
+
+.acte-text h2 {
+    padding-bottom: 3%;
+}
+
+.acte-text p {
+    padding-top: 5%;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.acte-text a {
+    padding-top: 5%;
+    font-size: .8rem;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+.acte-img {
+    width: 40%;
+}
+
+.acte img:hover {
+    transform: scale(1.1);
+}
+
+.personnage img:hover {
+    transform: scale(1.1);
+}
+
+.acte-img img {
+    width: auto;
+    height: 220px;
+}
+/*------------------------------- Desing section Prince--------------------------------- */
+
+#Prince {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+
+.text_prince {
+    width: 45%;
+}
+
+.text_prince h2 {
+    padding-top: 5%;
+}
+
+.text_prince p {
+    padding-top: 5%;
+    text-align: justify;
+}
+
+.style {
+    font-size: .875rem;
+}
+
+.description {
+    width: 55%;
+    text-align: center;
+}
+
+.photo_prince{
+    padding: 0% 25%;
+}
+
+.photo_prince img {
+    width: 100%;
+}
+
+.description_text {
+    background-color: var(--color_white);
+    border-radius: 0.8rem;
+    margin: -37% 20% 0% 20%;
+    padding-top: 40%;
+}
+
+.description_text h3 {
+    color: var(--deep-color_bleu);
+    font-size: 1.5rem;
+}
+
+.description_text div button {
+    background-color: var(--clear_color_bleu);
+    font-size: 0.5rem;
+    padding: 4% 7% 4% 7%;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color_white);
+}
+
+.description_text p{
+    color: var(--deep-color_bleu);
+    font-size: .8rem;
+    text-align: left;
+    padding-top: 0.5rem;
+}
+
+.description_text span, .ligne .button_fiche button  {
+    font-weight: bold;
+}
+
+.ligne {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 15% 15% 15%;
+}
+
+.button_fiche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#panther {
+    padding: 20% 25% 0% 25%;
+}
+
+#panther img {
+    width: 100%;
+}
+                    /*------------------------------- Desing section Formulaire--------------------------------- */
+#Form {
+    background-image: url(../img/Accueil/Pantherhome7.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.background_form {
+    margin-top: 10%;
+    padding: 3% 0% 3% 0%;
+    width: 60%;
+    text-align: center;
+    background-image: linear-gradient(180deg, 
+        rgba(255, 255, 255, 0.897), 
+        rgba(242, 206, 242, 0.2));
+    border-radius: 10rem;
+    margin-bottom: 5%;
+}
+
+.background_form p {
+    color: var(--deep-color_bleu);
+    padding-bottom: 0.5rem;
+}
+
+.background_form h1 {
+    font-family: "Cantarell";
+    color: var(--deep-color_bleu);
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.background_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background_form input {
+    width: 520px;
+    height: 56px;
+    background: transparent;
+    border-radius: 38px;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    border: solid 1px var(--deep-color_bleu);
+}
+
+.background_form textarea {
+    height: 200px;
+    width: 520px;
+    background: none;
+    border-radius: 38px;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border: solid 1px var(--deep-color_bleu);
+}
+
+.background_form button {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    background-color: var(--color_white);
+    margin-top: 30px;
+}
+
+#Form form button {
+  color: var(--deep-color_bleu);
+  background-color: var(--rose_color);
+  border: none;
+  height: 44px;
+  width: 154px;
+  border-radius: 38px;
+  cursor: pointer;
+}
+#Form form button:hover {
+  box-shadow: 0 0 40px var(--deep-color_bleu_2);
+}
+                    /*------------------------------- Desing Footer--------------------------------- */
+footer {
+    background: var(--clear_color_bleu);
+    padding: 6rem 3rem 4rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    gap: 6rem;
+}
+
+.footer-logo {
+    position: relative;
+    width: 300px;
+    height: 335px;
+}
+
+.footer-logo:hover, .reseaux-hover:hover {
+    transform: scale(1.1);
+}
+
+#bulles {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.logo-bulles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.footer-liens {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-bottom: 7rem;
+}
+
+.footer-reseaux {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer-droits {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: smaller;
+    list-style-type: disc;
+}
+
+.footer-droits li {
+    margin-right: 0.625rem;
+}
+
+.list1 {
+    list-style-type: none;
+}
+
+.footer-titre {
+    font-size: 1.375rem;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    height: 2rem;
+}
+
+.lienfooter:hover {
+    text-decoration: underline;
+}
+
+.alligne{
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    left: 0.5rem;
+    border-left: 3px solid #9e91b7;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .alligne_line {
+    height: 100%;
+    border-right: 3px solid #9e91b7;
+  }
+
+  .alligne_socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0 0 0.2rem;
+    margin-right: -0.5rem;
+  }
+
+  .alligne_socials a:hover {
+    filter: brightness(0)
+     saturate(100%)
+     invert(100%)
+     sepia(89%)
+     saturate(0%) 
+     hue-rotate(235deg) 
+     brightness(104%) 
+     contrast(101%);
+  }
+
+  p, h1, h2, h3, h4, h6, h5 {
+    position: relative;
+    animation-name: textmove;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes textmove {
+    from {right: 300px;}
+    to {right: 0px;}
+}
+                    /*------------------------------- Responsive Header--------------------------------- */
+@media (min-width: 320px) and (max-width: 600px) {
+    .logo{
+      width: 25%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lien_nav {
+        font-family: "Beyno";
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .logo img{
+      width: 100%;
+    }
+  
+    nav ul{
+      width: 20%;
+    }
+    nav ul a{
+      font-size: 10px;
+    }
+  }
+                    /*------------------------------- Responsive Content--------------------------------- */
+  @media (min-width: 769px) and (max-width: 1025px) {
+    .row_2 {
+      align-items: center;
+      flex-direction: column;
+    }
+    .row_2 p {
+      text-align: center;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  section a {
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+                    /*------------------------------- Responsive Footer--------------------------------- */
+  @media (min-width: 320px) and (max-width: 768px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .footer_img {
+      width: 100%;
+      height: 50vh;
+    }
+    .footer_img img {
+      max-width: 80%;
+      max-height: 100%;
+    }
+    .footer_img .float {
+      width: 20vw;
+      right: 40%;
+      max-height: 100%;
+    }
+  
+    footer .container, footer .row, footer .row_2, footer ul {
+      width: 100%;
+      margin-top: 10px;
+    }
+    footer .row {
+      flex-direction: column;
+    }
+    footer .row .reseau {
+      margin-top: 20px;
+    }
+    footer .row_2 {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
