@@ -5,21 +5,21 @@
 
 @font-face {
     font-family: "Beyno";
-    src: url(../css/font/BEYNO.ttf) format("TrueType");
+    src: url(../police/BEYNO.otf) format("TrueType");
 }
 
 @font-face {
     font-family: "Wakanda forever";
-    src: url(../css/font/Wakanda_Forever_Regular.ttf) format("TrueType");
+    src: url(../police/Wakanda_Forever_Regular.ttf) format("TrueType");
 }
 
 @font-face {
     font-family: "Cantarell";
-    src: url(../css/font/Cantarell_Regular.ttf) format("TrueType");
+    src: url(../police/Cantarell_Regular.ttf) format("TrueType");
 }
 
 :root {
-    --color_violet: #DF99F2;
+    --color_violet: #df99f28f;
     --color_white: #ffffff;
     --color_gray: #9E91B7;
     --rose_color: #F2CEF2;
@@ -81,7 +81,7 @@ nav {
 }
 
 .lien_nav {
-    font-family: "Beyno";
+    font-family: "Cantarell";
     display: flex;
     flex-direction: row;
     gap: 4rem;
@@ -94,6 +94,7 @@ nav {
 
 .lien_nav a:hover {
     text-decoration: underline;
+    color: var(--color_bleu);
 }
 
 .image:hover {
@@ -108,109 +109,112 @@ nav {
 }
 
 
-/* Main */
-.h2 {
-    font-family: 'Beyno';
-    color: var(--color_gray);
-    font-size: 1.5rem;
+                    /*------------------------------- Desing General--------------------------------- */
+#Black_Panther{
+    height: 103vh;
+    width: auto;
+    padding: 0 4%;
+    background-image: url("../img/Accueil/Pantherhome1..png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 33vw 3vw;
+    margin-bottom: 10vw;
 }
 
 .Black {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10%;
+    width: 48%;
+    padding-top: 8%;
+    margin-left: 2%;
 }
 
-.Black-text {
-    width: 30%;
-    display: flex;
-    gap: 100%;
-    flex-direction: column;
-}
-
-.Black-text *:not(:last-child) {
-    margin-bottom: 1rem;
-}
-
-.Black-text a {
-    text-decoration: underline;
-}
-
-.Black-text h1 {
-    font-family: 'Panthera';
+#Black_Panther h1{
+    font-size: 4vw !important;
+    margin-bottom: 10px;
+    font-family: "Panthera";
     color: var(--color_gray);
-    font-size: 2.8rem;
 }
 
-.Black-img {
-    width: 70%;
+#Black_Panther h2{
+    font-family: "Beyno";
+    color: var(--color_gray);
+    font-size: 22px;
 }
 
-.Black-img img {
-    width: 100%;
+#Black_Panther p {
+    width: 80%;
+    margin: 3vh 0;
 }
 
-                    /*------------------------------- Desing section Acteurs--------------------------------- */
-#Acteur {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10%;
-}
-
-.acte {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--deep-color_bleu);
-    padding-left: 2%;
-    width: 43.5%;
-}
-
-.acteurs {
-    width: 12%;
-    padding-left: 1%;
-    background-color: var(--deep-color_bleu);
-}
-
-.acte-text {
-    padding-top: 5%;
-    padding-left: 2%;
-    width: 60%;
-}
-
-.acte-text h2 {
-    padding-bottom: 3%;
-}
-
-.acte-text p {
-    padding-top: 5%;
-    font-size: .8rem;
-    text-align: justify;
-}
-
-.acte-text a {
-    padding-top: 5%;
-    font-size: .8rem;
-    text-align: justify;
+#Black_Panther a{
     text-decoration: underline;
 }
-
-.acte-img {
-    width: 40%;
+                    /*------------------------------- Desing section Acteurs--------------------------------- */
+#Acteurs{
+    height: 40vh;
+    padding-left: 5vw;
 }
 
-.acte img:hover {
-    transform: scale(1.1);
+#Acteurs img {
+    width: 100%;
+    height: 100%;
 }
 
-.personnage img:hover {
-    transform: scale(1.1);
+.acteur_card{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    height: 100%;
+    position: relative;
+    background-color: var(--deep-color_bleu);
 }
 
-.acte-img img {
-    width: auto;
-    height: 220px;
+.button{
+    padding-top: 0.4%;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    top: 45%;
+    right: 5%;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background: var(--deep-color_bleu);
+}
+
+.acte{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    width: 50vw;
+    height: 100%;
+}
+
+.acte_text{
+    padding: 8% 12%;
+}
+
+.zomme{
+    bottom: 10%;
+    position: relative;
+    height: 120% !important;
+}
+
+.acte h2{
+    padding-bottom: 10px;
+    font-family: "Beyno";
+    color: var(--color_gray);
+}
+
+.acte p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.acte a{
+    font-size: 12px;
+    text-align: justify;
+    text-decoration: underline;
 }
 /*------------------------------- Desing section Prince--------------------------------- */
 
@@ -227,6 +231,9 @@ nav {
 
 .text_prince h2 {
     padding-top: 5%;
+    font-family: "Beyno";
+    font-size: 22px;
+    color: var(--color_gray);
 }
 
 .text_prince p {
@@ -507,7 +514,7 @@ footer {
     to {right: 0px;}
 }
                     /*------------------------------- Responsive Header--------------------------------- */
-@media (min-width: 320px) and (max-width: 600px) {
+/*@media (min-width: 320px) and (max-width: 600px) {
     .logo{
       width: 25%;
       height: auto;
@@ -532,9 +539,9 @@ footer {
     nav ul a{
       font-size: 10px;
     }
-  }
+  }*/
                     /*------------------------------- Responsive Content--------------------------------- */
-  @media (min-width: 769px) and (max-width: 1025px) {
+  /*@media (min-width: 769px) and (max-width: 1025px) {
     .row_2 {
       align-items: center;
       flex-direction: column;
@@ -555,9 +562,9 @@ footer {
   
   img {
     max-width: 100%;
-  }
+  }*/
                     /*------------------------------- Responsive Footer--------------------------------- */
-  @media (min-width: 320px) and (max-width: 768px) {
+  /*@media (min-width: 320px) and (max-width: 768px) {
     footer {
       display: flex;
       flex-direction: column;
@@ -593,4 +600,4 @@ footer {
       align-items: center;
       margin-bottom: 30px;
     }
-  }
+  }*/
