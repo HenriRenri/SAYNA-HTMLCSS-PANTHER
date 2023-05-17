@@ -21,6 +21,7 @@
 :root {
     --color_violet: #df99f28f;
     --color_white: #ffffff;
+    --color_white_2: #ffffffbb;
     --color_gray: #9E91B7;
     --rose_color: #F2CEF2;
     --clear_color_bleu: #3D2DA6;
@@ -259,55 +260,67 @@ nav {
 }
 
 .description_text {
-    background-color: var(--color_white);
+    background-color: var(--color_white_2);
     border-radius: 0.8rem;
-    margin: -37% 20% 0% 20%;
+    margin: -37% 20% 70% 20%;
     padding-top: 40%;
 }
 
 .description_text h3 {
-    color: var(--deep-color_bleu);
-    font-size: 1.5rem;
+    font-family: "Cantarell";
+    font-size: 26px;
+    color: black;
+    text-align: center;
 }
 
-.description_text div button {
-    background-color: var(--clear_color_bleu);
-    font-size: 0.5rem;
-    padding: 4% 7% 4% 7%;
+.description_text button {
+    background-color: var(--color_bleu);
+    font-size: 0.7rem;
+    padding: 1%;
     border: none;
     border-radius: 0.5rem;
     color: var(--color_white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Cantarell";
+    font-size: 16px;
 }
 
-.description_text p{
-    color: var(--deep-color_bleu);
-    font-size: .8rem;
+.description_text h4{
+    color: black;
+    font-size: 0.9rem;
     text-align: left;
     padding-top: 0.5rem;
 }
 
-.description_text span, .ligne .button_fiche button  {
-    font-weight: bold;
+.description_text .ligne h4 span{
+    font-size: medium;
 }
 
 .ligne {
     display: flex;
     flex-direction: column;
-    padding: 7% 15% 15% 15%;
+    padding: 7%;
 }
 
 .button_fiche {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4%;
 }
 
 #panther {
-    padding: 20% 25% 0% 25%;
+    margin-bottom: 60%;
+    position: relative;
 }
 
 #panther img {
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
                     /*------------------------------- Desing section Formulaire--------------------------------- */
 #Form {
