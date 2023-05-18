@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: "Beyno";
-    src: url(../police/font/BEYNO.ttf) format("TrueType");
+    src: url(../police/BEYNO.otf) format("TrueType");
 }
 @font-face {
     font-family: "Wakanda forever";
@@ -16,15 +16,15 @@
 }
 
 :root {
-    --violet: #DF99F2;
-    --white: #ffffff;
-    --gris: #9E91B7;
-    --rose: #F2CEF2;
-    --clear-blue: #3D2DA6;
-    --blue: #07338C;
-    --deep-blue: #021740;
+    --color_violet: #bc33e2e8;
+    --coloor_white: #ffffff;
+    --color_gray: #9E91B7;
+    --color_rose: #F2CEF2;
+    --color_clear_bleu: #3D2DA6;
+    --color_bleu: #07338C;
+    --color_dark_bleu: #021740;
 }
-
+                        /*--------------------Desing Général------------------------------------ */
 p, h1, h2, h3, h4, h6, h5 {
     position: relative;
     animation-name: textmove;
@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h6, h5 {
 }
 
 body {
-    color: var(--white);
+    color: var(--coloor_white);
     font-family: "Cantarell", sans-serif;
     font-size: 1rem;
     background-image: url(../img/All_pages/arrière_plan.png);
@@ -59,7 +59,7 @@ ul {
     list-style-type: none;
 }
 
-/*En têtê */
+                        /*--------------------Desing Header Wakanda------------------------------------ */
 nav {
     padding: 3rem 2rem;
 }
@@ -76,56 +76,63 @@ nav {
 .logo .cross {
 	height: 33%;
 }
-.nav-content {
+.nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
 }
-.nav-links {
+.lien_nav {
     font-family: "Beyno";
     display: flex;
     flex-direction: row;
     gap: 4rem;
 }
-.link-active {
-    color: var(--violet);
+.lien_active {
+    color: var(--color_violet);
     text-decoration: underline;
 }
-.nav-links a:hover {
+.lien_nav a:hover {
     text-decoration: underline;
 }
-.img-hover:hover {
-    filter: brightness(0) saturate(100%) invert(75%) sepia(61%) saturate(1896%) hue-rotate(212deg) brightness(100%) contrast(90%);
+.img:hover {
+    filter: brightness(0)
+        saturate(100%)
+        invert(75%)
+        sepia(61%) 
+        saturate(1896%) 
+        hue-rotate(212deg) 
+        brightness(100%) 
+        contrast(90%);
 }
-/* Fin en tête */
-
-
-.banner {
-    background-image: url(../img/Wakanda/Pantherwakanda1.png);
+                        /*--------------------Desing Section Back------------------------------------ */
+.Back {
+    height: 90vh;
+    background-image: url("../img/Wakanda/Pantherwakanda1.png");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: left 4vw center;
 }
-.banner-text {
+.Back_text {
     display: flex;
     flex-direction: column;
     padding-top: 15rem;
     padding-left: 10rem;
     padding-bottom: 20rem;
 }
-.banner-title {
-    font-family: "Beyno";
-    color: var(--gris);
-    font-size: 4.25rem;
-    font-weight: 300;
+.Back_titre {
+    font-family: "beyno";
+    color: var(--color_gray);
+    font-size: 60px;
 }
-.banner-subtitle {
+.Back_sous_titre {
     font-family: "Wakanda forever";
-    color: var(--gris);
+    color: var(--color_gray);
     font-size: 2.688rem;
     margin-top: 0.5rem;
 }
-.banner-text p {
+.Back_text p {
     width: 35%;
     text-align: justify;
     margin-top: 3rem;
@@ -134,8 +141,8 @@ nav {
     font-size: .875rem;
 }
 
-/* Section History of Wakanda */
-#wakanda-history {
+                        /*--------------------Desing Section Histoire------------------------------------ */
+#Histoire {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-direction: row;
@@ -144,11 +151,11 @@ nav {
     text-align: justify;
     position: relative;
 }
-#wakanda-history>* {
+#Histoire>* {
     position: relative;
     z-index: 1;
 }
-#wakanda-history::after {
+#Histoire::after {
     content: "";
     background-image: url(../img/Wakanda/Pantherwakanda2.png);
     background-size: 100%;
@@ -160,30 +167,29 @@ nav {
     height: 100%;
     width: 100%;
     z-index: 0;
-    opacity: 0.15;
+    opacity: 0.9;
 }
-#wakanda-history p {
+#Histoire p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-#wakanda-history h3 {
+#Histoire h3 {
     font-family: "Beyno";
-    color: var(--gris);
+    color: var(--color_gray);
     font-size: 1.3rem;
 }
-#wakanda-history img {
+#Histoire img {
     width: 100%;
-}
-.video iframe {
-    width: 100%;
-    height: auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+}video {
+    width: 520px;
+    height: 360px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* FOOTER */
 footer {
-    background: var(--clear-blue);
+    background: var(--color_clear_bleu);
     padding: 6rem 3rem 4rem 4rem;
     display: flex;
     flex-direction: row;

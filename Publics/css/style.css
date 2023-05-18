@@ -29,7 +29,7 @@
     --deep-color_bleu: #021740be;
     --deep-color_bleu_2: #02174065;
 }
-
+                        /*--------------------Desing Général------------------------------------ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -52,7 +52,7 @@ ul {
     list-style-type: none;
 }
 
-                        /*-------------------- Header------------------------------------ */
+                        /*--------------------Desing Header------------------------------------ */
 nav {
     padding: 3rem 2rem;
 }
@@ -82,13 +82,13 @@ nav {
 }
 
 .lien_nav {
-    font-family: "Cantarell";
+    font-family: "Beyno";
     display: flex;
     flex-direction: row;
     gap: 4rem;
 }
 
-.link-active {
+.lien_active {
     color: var(--color_violet);
     text-decoration: underline;
 }
