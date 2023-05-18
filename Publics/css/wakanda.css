@@ -19,7 +19,7 @@
     --color_violet: #bc33e2e8;
     --coloor_white: #ffffff;
     --color_gray: #9E91B7;
-    --color_rose: #F2CEF2;
+    --color_pink: #F2CEF2;
     --color_clear_bleu: #3D2DA6;
     --color_bleu: #07338C;
     --color_dark_bleu: #021740;
@@ -105,6 +105,22 @@ nav {
         hue-rotate(212deg) 
         brightness(100%) 
         contrast(90%);
+}
+                        /*--------------------Responsive Header------------------------------------ */
+@media (min-width: 320px) and (max-width: 728px) {
+    header .logo {
+      width: 30%;
+    }
+    header .logo img {
+      width: 100%;
+    }
+  
+    nav ul {
+      width: 60%;
+    }
+    nav ul a {
+      font-size: 3vw;
+    }
 }
                         /*--------------------Desing Section Back------------------------------------ */
 .Back {
@@ -252,4 +268,3 @@ footer {
 .lienfooter:hover {
     text-decoration: underline;
 }
-

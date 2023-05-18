@@ -23,7 +23,7 @@
     --color_white: #ffffff;
     --color_white_2: #ffffffbb;
     --color_gray: #9E91B7;
-    --rose_color: #F2CEF2;
+    --color_pink: #F2CEF2;
     --clear_color_bleu: #3D2DA6;
     --color_bleu: #07338C;
     --deep-color_bleu: #021740be;
@@ -393,7 +393,7 @@ nav {
 
 #Form form button {
   color: var(--deep-color_bleu);
-  background-color: var(--rose_color);
+  background-color: var(--color_pink);
   border: none;
   height: 44px;
   width: 154px;
