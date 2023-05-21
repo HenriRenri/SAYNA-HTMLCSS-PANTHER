@@ -84,7 +84,7 @@ header, .w100{
 }
 
 .border {
-    border: 2px solid var(----color_grey);
+    border: 2px solid var(--color_grey);
 }
 
 h1 {
@@ -95,12 +95,19 @@ h1 {
 h2 {
     font-family: "Beyno";
     font-size: 22px;
-    color: var(----color_grey);
+    color: var(--color_grey);
 }
 
 p, a, h5, h4, h3, li {
     font-family: "Cantarell";
     font-size: 16px;
+}
+
+p, h1, h2, h3, h4, h6, h5 {
+  position: relative;
+  animation-name: textmove;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
 }
 
 .citation {
@@ -138,7 +145,7 @@ nav ul {
     list-style-type: none;
     width: 40%;
 }
-nav ul li {
+nav ul li a{
     text-align: center;
     font-family: "Beyno";
     font-size: 20px;
@@ -168,39 +175,8 @@ nav ul li a:hover {
     nav ul {
       width: 60%;
     }
-    nav ul a {
-      font-size: 3vw;
-    }
+    
   }
-
-p, h1, h2, h3, h4, h6, h5 {
-  position: relative;
-  -webkit-animation-name: textmove;
-          animation-name: textmove;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-@-webkit-keyframes textmove {
-  from {
-    right: 300px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
-@keyframes textmove {
-  from {
-    right: 300px;
-  }
-  to {
-    right: 0px;
-  }
-}
-
 
 .sidebar .container .table img:hover {
   filter: grayscale(0%) hue-rotate(100deg) contrast(2000%);
@@ -234,7 +210,7 @@ p, h1, h2, h3, h4, h6, h5 {
   font-family: "Beyno";
   font-size: 60px;
   width: 100%;
-  color: var(----color_grey);
+  color: var(--color_grey);
 }
 #Dora .text {
   height: 60%;
@@ -275,10 +251,44 @@ p, h1, h2, h3, h4, h6, h5 {
       width: 90% !important;
       text-align: center;
     }
+/*--------------------Responsive Header reconditionner------------------------------------ */
+    header .logo {
+      width: 50%;
+      height: 15vh;
+    }
+    header .logo img {
+      width: 60%;
+      height: auto;
+    }
+  
+    nav ul {
+      width: 50%;
+      font-size: 15px;
+      justify-content: space-between;
+    }
+    nav ul li {
+      text-align: center;
+      font-family: "Beyno";
+      font-size: 20px;
+      width: 30%;
   }
+  nav ul li a{
+    text-align: center;
+    font-family: "Beyno";
+    font-size: 10px;
+    width: 20%;
+}
+  }
+
   @media (min-width: 481px) and (max-width: 768px) {
     #Dora h1 {
-      font-size: 6vw;
+      font-size: 5vw;
+      color: var(--color_grey);
+    }
+    .text p{
+      font-size: 14px;
+      width: 90%;
+      text-align: center;
     }
   }
                         /*--------------------Desing du section Transcription------------------------------------ */
@@ -295,7 +305,7 @@ p, h1, h2, h3, h4, h6, h5 {
   letter-spacing: 10px;
   font-size: 22px;
   width: 80%;
-  color: var(----color_grey);
+  color: var(--color_grey);
   margin-bottom: 7vw;
 }
 
@@ -513,7 +523,7 @@ footer .table{
       max-height: 100%;
     }
                       
-                           .footer_img .foot {
+    .footer_img .foot {
         position: absolute;
         width: 20vw;
         right: 40%;

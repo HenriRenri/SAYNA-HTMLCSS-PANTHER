@@ -24,7 +24,7 @@
     --color_bleu: #07338C;
     --color_dark_bleu: #021740;
 }
-                        /*--------------------Desing Général------------------------------------ */
+/*-----------------------------------------Desing Général------------------------------------------------ */
 p, h1, h2, h3, h4, h6, h5 {
     position: relative;
     animation-name: textmove;
@@ -59,7 +59,7 @@ ul {
     list-style-type: none;
 }
 
-                        /*--------------------Desing Header Wakanda------------------------------------ */
+/*-----------------------------------------Desing Header Wakanda------------------------------------------ */
 nav {
     padding: 3rem 2rem;
 }
@@ -106,24 +106,29 @@ nav {
         brightness(100%) 
         contrast(90%);
 }
-                        /*--------------------Responsive Header------------------------------------ */
-@media (min-width: 320px) and (max-width: 728px) {
-    header .logo {
-      width: 30%;
+/*---------------------------------------Responsive Header------------------------------------------------ */
+@media (min-width: 320px) and (max-width: 768px) {
+    header .logo{
+        width:30%;
+        height: auto;
     }
-    header .logo img {
-      width: 100%;
+    header .logo img{
+        width: 100%;
     }
-  
-    nav ul {
-      width: 60%;
+    .nav{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
     }
-    nav ul a {
-      font-size: 3vw;
+    nav ul{
+        width: 60%;
     }
 }
-                        /*--------------------Desing Section Back------------------------------------ */
-.Back {
+/*-------------------------------------------Desing Section Back------------------------------------------ */
+#Back {
     height: 90vh;
     background-image: url("../img/Wakanda/Pantherwakanda1.png");
     background-repeat: no-repeat;
@@ -153,8 +158,38 @@ nav {
     text-align: justify;
     margin-top: 3rem;
 }
-.quote {
-    font-size: .875rem;
+                        /*--------------------Resposnive Section Back------------------------------------ */
+@media (min-width: 320px) and (max-width: 768px) {
+    #Back {
+        height: 60vh;
+        background-image: url("../img/Wakanda/Pantherwakanda1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left 4vw center;
+    }
+    .Back_text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-left: 4.2rem;
+        padding-bottom: 20rem;
+    }
+    .Back_titre {
+        font-family: "beyno";
+        color: var(--color_gray);
+        font-size: 30px;
+    }
+    .Back_sous_titre {
+        font-family: "Wakanda forever";
+        color: var(--color_gray);
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .Back_text p {
+        width: 60%;
+        text-align: justify;
+        margin-top: 3rem;
+    }
 }
 
                         /*--------------------Desing Section Histoire------------------------------------ */
@@ -188,6 +223,10 @@ nav {
     opacity: 0.9;
 }
 
+.quote {
+    font-size: .875rem;
+}
+
 #Histoire p {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -208,6 +247,23 @@ video {
     height: 360px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+/*-------------------------------------------Responsive Section Histoire------------------------------------ */
+@media (min-width: 320px) and (max-width: 768px) {
+    #Histoire {
+        display: block;
+        flex-direction: row;
+        gap: 7rem;
+        padding: 10%;
+        text-align: justify;
+        position: relative;
+    }
+    video {
+        width: 520px;
+        height: 360px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
 }
                         /*--------------------Desing Footer------------------------------------ */
 footer{
@@ -381,4 +437,6 @@ footer .table{
     }
 }
 
-/* ----------------------------------------- Realiser par Nal'aina---------------------------------------*/
+/* ---------------------------------------- Realiser 
+                                                    par 
+                                                        Nal'aina---------------------------------------*/

@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Panthera";
-    src: url(../police/Panthera_Regular.ttf) format("TrueType");
+    src: url("../police/Panthera_Regular.ttf") format("TrueType");
 }
 
 @font-face {
     font-family: "Beyno";
-    src: url(../police/BEYNO.otf) format("TrueType");
+    src: url("../police/BEYNO.otf") format("TrueType");
 }
 
 @font-face {
     font-family: "Wakanda forever";
-    src: url(../police/Wakanda_Forever_Regular.ttf) format("TrueType");
+    src: url("../police/Wakanda_Forever_Regular.ttf") format("TrueType");
 }
 
 @font-face {
     font-family: "Cantarell";
-    src: url(../police/Cantarell_Regular.ttf) format("TrueType");
+    src: url("../police/Cantarell_Regular.ttf") format("TrueType");
 }
 
 :root {
@@ -41,7 +41,7 @@ body {
     color: var(--color_white);
     font-family: "Cantarell", sans-serif;
     font-size: 1rem;
-    background-image: url(../img/All_pages/arrière_plan.png);
+    background-image: url("../img/All_pages/arrière_plan.png");
 }
 
 a {
@@ -93,8 +93,8 @@ nav {
     padding: 0 4rem;
 }
 
-.lien_nav {
-    font-family: "Beyno";
+nav .lien_nav {
+    font-family: 'Beyno';
     display: flex;
     flex-direction: row;
     gap: 4rem;
@@ -109,7 +109,35 @@ nav {
     text-decoration: underline;
     color: var(--color_bleu);
 }
+                        /*--------------------Responsive Header Acceuil------------------------------------ */
+@media (min-width: 320px) and (max-width: 768px) {
+    header .logo{
+        width: 35%;
+        height: auto;
+    }
+    header .logo img{
+        width: 100%;
+        height: auto;
+    }
+    .nav{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+    }
+    nav ul{
+        width: 60%;
+    }
+    .lien_nav {
+        font-family: 'Beyno';
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+                        /*--------------------Desing Asside------------------------------------ */
 .image:hover {
     filter: brightness(0) 
      saturate(100%) 
@@ -194,7 +222,26 @@ nav {
 #Black_Panther a{
     text-decoration: underline;
 }
-                    /*------------------------------- Desing section Acteurs--------------------------------- */
+                    /*------------------------------- Responsive Black Panther--------------------------------- */
+@media (min-width: 320px) and (max-width: 768px){
+    #Black_Panther{
+        height: 50vh;
+        width: auto;
+        padding: 0 4%;
+        background-image: url("../img/Accueil/Pantherhome1..png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 33vw 3vw;
+        margin-bottom: 10vw;
+        padding-left: 10%;
+    }
+    #Black_Panther .Black {
+        width: 100%;
+        padding-top: 8%;
+    }
+    
+}
+                /*------------------------------- Desing section Acteurs--------------------------------- */
 #Acteurs{
     height: 40vh;
     padding-left: 5vw;
@@ -232,7 +279,7 @@ nav {
     display: grid;
     grid-template-columns: 45% 55%;
     grid-template-rows: 100%;
-    width: 50vw;
+    width: 60vw;
     height: 100%;
 }
 
@@ -246,22 +293,78 @@ nav {
     height: 120% !important;
 }
 
-.acte h2{
+.acte h2, .acte_2 h2{
     padding-bottom: 10px;
     font-family: "Beyno";
     color: var(--color_gray);
 }
 
-.acte p{
+.acte p, .acte_2 p{
     font-size: 12px;
     text-align: justify;
 }
 
-.acte a{
+.acte a, .acte_2 a{
     font-size: 12px;
     text-align: justify;
     text-decoration: underline;
 }
+                    /*------------------------------- Desing section Acteurs--------------------------------- */
+@media (min-width: 320px) and (max-width: 768px){
+    #Acteurs img {
+        width: 170px;
+        height: 35%;
+    }
+    .acteur_card{
+        display: block;
+        padding-left: 5%;
+        height: 750px;
+        width: 100%;
+        position: relative;
+        background-color: var(--deep-color_bleu);
+    }
+    .acte{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+    }
+    .acte_img{
+        position: absolute;
+        top: 260px;
+    }
+    .acte_2 {
+        position: absolute;
+        width: 260px;
+        font-size: 12px;
+        top: 265px;
+        left: 60%;
+    }
+    .acte h2{
+        padding-bottom: -1px;
+        font-family: "Beyno";
+        color: var(--color_gray);
+    }
+    .acte p{
+        width: 260px;
+        font-size: 12px;
+    }
+    .zomme{
+        left: 2%;
+        top: 5%;
+        position: relative;
+        height: 30% !important;
+        width: 170px !important;
+        padding-bottom: 10%;
+    }
+    .button{
+        display: none;
+    }
+    .card_img{
+        position: absolute;
+        top: 475px;
+        width: 920px;
+    }
+    }
 /*------------------------------- Desing section Prince--------------------------------- */
 
 #Prince {
@@ -320,7 +423,6 @@ nav {
 
 .description_text button {
     background-color: var(--color_bleu);
-    font-size: 0.7rem;
     padding: 1%;
     border: none;
     border-radius: 0.5rem;
@@ -359,7 +461,7 @@ nav {
 }
 
 #panther {
-    margin-bottom: 60%;
+    margin-bottom: 70%;
     position: relative;
 }
 
@@ -367,9 +469,48 @@ nav {
     width: auto;
     height: 100%;
 }
-                    /*------------------------------- Desing section Formulaire--------------------------------- */
+/*------------------------------- Responsive du section Prince--------------------------------- */
+@media (min-width: 320px) and (max-width: 768px) {
+    #Prince {
+        display: block;
+        margin-top: 10%;
+        margin-left: 13%;
+        padding-top: 75%;
+    }
+    .text_prince {
+        width: 85%;
+        z-index: 20;
+    }
+    .description {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        z-index: 18;
+    }
+    .description_text button {
+        background-color: var(--color_bleu);
+        font-size: 0.7rem;
+        padding: 1%;
+        border: none;
+        border-radius: 0.5rem;
+        color: var(--color_white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: "Cantarell";
+    }
+    #panther {
+        top: 604%;
+        position: absolute;
+        opacity: 0.7;
+        right: 1%;
+        margin-bottom: 20%;
+    }
+}
+/*------------------------------- Desing section Formulaire--------------------------------- */
 #Form {
-    background-image: url(../img/Accueil/Pantherhome7.png);
+    background-image: url("../img/Accueil/Pantherhome7.png");
     background-size: cover;
     text-align: center;
     display: flex;
@@ -450,8 +591,45 @@ nav {
 #Form form button:hover {
   box-shadow: 0 0 20px #021740;
 }
+/*------------------------------- Desing section Formulaire--------------------------------- */
+@media (min-width: 320px) and (max-width: 768px) {
+    .background_form {
+        width: 85%;
+        text-align: center;
+        background-image: linear-gradient(180deg, 
+            var(--color_white), 
+            var(--color_pink));
+        border-radius: 4rem;
+        margin-bottom: 5%;
+        margin-top: 20%;
+    }
+    .background_form p {
+        color: var(--deep-color_bleu);
+        padding-bottom: 0.5rem;
+        padding-top: 4%;
+    }
+    .background_form input {
+        width: 420px;
+        height: 56px;
+        background: transparent;
+        border-radius: 38px;
+        padding-left: 1rem;
+        margin-top: 2rem;
+        border: solid 1px var(--deep-color_bleu);
+    }
+    .background_form textarea {
+        height: 200px;
+        width: 420px;
+        background: none;
+        border-radius: 38px;
+        padding-left: 1rem;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border: solid 1px var(--deep-color_bleu);
+    }
+}
 
-/*------------------------------- Desing Footer--------------------------------- */
+/*------------------------------- Desing Footer de la page d'acceuil --------------------------------- */
 footer{
     height: 80vh;
     background-image: url("../img/All_pages/back_footer.png");
@@ -622,8 +800,6 @@ footer .table{
       text-align: center;
     }
 }
-
-/* ----------------------------------------- Realiser par Nal'aina---------------------------------------*/
 
 /* -----------------------------------------Realiser 
                                                     par 
